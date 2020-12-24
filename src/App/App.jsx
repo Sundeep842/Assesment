@@ -21,10 +21,8 @@ class App extends React.Component {
 
     render() {
         const { alert } = this.props;
-        const usera =  JSON.parse( localStorage.getItem('user'))
         return (
             <div className="jumbotron">
-                {console.log(usera)}
                 <div className="container">
                     <div className="col-sm-8 col-sm-offset-2">
                         {alert.message &&
